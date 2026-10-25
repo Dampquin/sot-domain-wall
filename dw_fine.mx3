@@ -1,0 +1,11 @@
+SetGridsize(1024, 128, 1)
+SetCellsize(1e-9, 1e-9, 0.6e-9)
+Msat = 1.1e6
+Aex = 16e-12
+Ku1 = 1.25e6
+AnisU = vector(0, 0, 1)
+alpha = 0.3
+Dind = 1e-3
+m = TwoDomain(0,0,1,  -1,0,0,  0,0,-1)
+relax()
+save(m)

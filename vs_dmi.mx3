@@ -1,0 +1,33 @@
+SetGridsize(512, 64, 1)
+SetCellsize(2e-9, 2e-9, 0.6e-9)
+Msat  = 1.1e6
+Aex   = 16e-12
+Ku1   = 1.25e6
+AnisU = vector(0, 0, 1)
+alpha = 0.3
+
+Lambda       = 1
+EpsilonPrime = 0
+Pol          = 0.1
+FixedLayer   = vector(0, 1, 0)
+
+L  := 1024e-9
+x1 := 0.0
+x2 := 0.0
+
+for dmi := 0.5e-3; dmi < 1.6e-3; dmi = dmi + 0.5e-3 {
+    for Jc := 2e11; Jc < 2.1e12; Jc = Jc + 2e11 {
+        Dind = dmi
+        J = vector(0, 0, 0)
+        m = TwoDomain(0,0,1,  -1,0,0,  0,0,-1)
+        relax()
+        J = vector(0, 0, Jc)
+        run(0.3e-9)
+        x1 = L*(1 + m.comp(2).average())/2
+        run(0.5e-9)
+        x2 = L*(1 + m.comp(2).average())/2
+        save(m)
+        fprintln("vDJ.txt", dmi, Jc, (x2-x1)/0.5e-9)
+        print("D =", dmi, "  J =", Jc, "  v =", (x2-x1)/0.5e-9)
+    }
+}
