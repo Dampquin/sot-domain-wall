@@ -6,7 +6,9 @@
 
 ## Summary
 
-I used mumax3 to simulate a single domain wall in a perpendicularly magnetised Pt/Co strip and drove it with spin-orbit torque (SOT) from a current in the Pt. The static wall structure and the DMI chirality energy match analytical theory to within 1.5–4%. Wall velocity grows linearly at low current density and saturates at high current, with a ceiling that rises with DMI strength. A simple 1D (collective-coordinate) model overestimates the velocity by up to 15%. Adding the wall's own magnetostatic Bloch preference brings agreement to within ~2% at weak DMI. The remaining deviation at strong DMI tracks the SOT-induced wall tilt (up to ~21°) across all 30 runs (Pearson r = 0.98). A 1D model cannot capture that tilt.
+I used mumax3 to simulate a single domain wall in a perpendicularly magnetised Pt/Co strip and drove it with spin-orbit torque (SOT) from a current in the Pt. The static wall structure and the DMI chirality energy match analytical theory to within 1.5–4%. Wall velocity grows linearly at low current density and saturates at high current, with a ceiling that rises with DMI strength. 
+
+A simple 1D (collective-coordinate) model overestimates the velocity by up to 15%. Adding the wall's own magnetostatic Bloch preference brings agreement to within ~2% at weak DMI. The remaining deviation at strong DMI tracks the SOT-induced wall tilt (up to ~21°) across all 30 runs (Pearson r = 0.98). A 1D model cannot capture that tilt.
 
 ![Final results](final_figure.png)
 *Left: wall speed vs current density for three DMI strengths (dots: simulation; dashed: simple 1D model; solid: 1D model with the wall's Bloch preference). Middle: wall tilt angle during motion. Right: remaining speed deficit vs tilt angle; points from all three DMI values fall on one trend.*
