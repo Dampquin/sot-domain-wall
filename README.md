@@ -79,11 +79,11 @@ With J = 2 × 10¹¹ A/m² for 1 ns (2 nm cells):
 ### 3. Comparison with the 1D model
 In the steady-state collective-coordinate model, the wall's internal angle φ (0 = Néel, 90° = Bloch) satisfies
 
-$$\frac{\pi}{2}\frac{H_{SH}\cos\varphi}{\alpha} = \frac{\pi}{2}H_D\sin\varphi - \frac{H_K}{2}\sin 2\varphi, \qquad v = \gamma\Delta\,\frac{\pi}{2}\,\frac{H_{SH}\cos\varphi}{\alpha},$$
+$$\frac{\pi}{2}\frac{H_{SH}\cos\varphi}{\alpha} = \frac{\pi}{2}H_D\sin\varphi - \frac{H_K}{2}\sin 2\varphi, \qquad v = \gamma\Delta \frac{\pi}{2} \frac{H_{SH}\cos\varphi}{\alpha},$$
 
 where the field terms (written as μ₀H, in tesla) are
 
-$$\mu_0 H_D = \frac{D}{M_s \Delta}, \qquad \mu_0 H_K = \frac{\mu_0 M_s\, t \ln 2}{\pi \Delta} \approx 0.034\ \mathrm{T}.$$
+$$\mu_0 H_D = \frac{D}{M_s \Delta}, \qquad \mu_0 H_K = \frac{\mu_0 M_s  t \ln 2}{\pi \Delta} \approx 0.034\ \mathrm{T}.$$
 
 H_K is the wall's magnetostatic preference for the Bloch configuration (Tarasenko *et al.*, 1998).
 
