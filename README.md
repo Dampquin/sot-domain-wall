@@ -1,8 +1,8 @@
 # Spin-orbit-torque-driven domain walls in Pt/Co: a micromagnetic study
 
-**Author:** Nevan (Jairam Naga Nevan), BS-MS Physics, IISER Tirupati
+**Author:** Jairam Naga Nevan, BS-MS Physics, IISER Tirupati
 **Tools:** mumax3 3.12 (GPU), Python (NumPy, SciPy, Matplotlib)
-**Status:** completed October 2026
+**Status:** Completed (October 2026)
 
 ## Summary
 
